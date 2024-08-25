@@ -13,7 +13,7 @@ export default async function ContactPage({ searchParams }: { searchParams?: { q
   const totalPages = await getContactPages(query);
 
   return (
-    <div className="max-w-screen-lg mx-auto mt-5">
+    <div className="w-full max-w-screen-lg mx-auto px-4 py-16">
       <div className="flex justify-center items-center gap-1 mb-5">
         <ContactSearch />
         <CreateButton />
